@@ -9,7 +9,7 @@
 /* Body Styling */
 body {
     background-color: #EFE6DD; /* Light Beige */
-    color: #8F8373; /* Dark Beige */
+    color: #4A4A4A; /* Dark Gray */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
 
 /* Navigation Bar */
 nav {
-    background-color: #8F8373; /* Dark Beige */
+    background-color: #217C89; /* Deep Teal */
     color: #fff;
     padding: 15px;
     text-align: center;
@@ -40,37 +40,37 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #5D88C8; /* Accent Blue */
+    background-color: #48A7C5; /* Turquoise */
     border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    background: url('path/to/your/image.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #4A4A4A; /* Warm Gray */
+    color: #4A4A4A; /* Dark Gray */
 }
 
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #5D88C8; /* Accent Blue */
+    color: #5DBCD2; /* Teal Green */
 }
 
 .hero .intro {
     font-size: 1.5em;
     margin-bottom: 20px;
     max-width: 600px;
-    color: #4A4A4A; /* Warm Gray */
+    color: #4A4A4A; /* Dark Gray */
 }
 
 .hero .cta {
-    background-color: #5D88C8; /* Accent Blue */
+    background-color: #48A7C5; /* Turquoise */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -80,7 +80,7 @@ nav a:hover {
 }
 
 .hero .cta:hover {
-    background-color: #3A5A99; /* Deep Blue */
+    background-color: #217C89; /* Deep Teal */
 }
 
 /* About Section */
@@ -93,7 +93,7 @@ nav a:hover {
 #about h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #5D88C8; /* Accent Blue */
+    color: #48A7C5; /* Turquoise */
 }
 
 .about-content {
@@ -115,7 +115,7 @@ nav a:hover {
     line-height: 1.6;
     max-width: 600px;
     text-align: justify;
-    color: #4A4A4A; /* Warm Gray */
+    color: #4A4A4A; /* Dark Gray */
 }
 
 /* Projects Section */
@@ -128,7 +128,7 @@ nav a:hover {
 #projects h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #5D88C8; /* Accent Blue */
+    color: #48A7C5; /* Turquoise */
 }
 
 .projects-grid {
@@ -152,69 +152,13 @@ nav a:hover {
 
 .project-card h3 {
     margin-bottom: 15px;
-    color: #5D88C8; /* Accent Blue */
+    color: #48A7C5; /* Turquoise */
 }
 
 .project-card p {
     font-size: 1em;
     margin-bottom: 15px;
-    color: #4A4A4A; /* Warm Gray */
+    color: #4A4A4A; /* Dark Gray */
 }
 
 .project-card a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #5D88C8; /* Accent Blue */
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.project-card a:hover {
-    background-color: #3A5A99; /* Deep Blue */
-}
-
-.project-card:hover {
-    transform: translateY(-5px); /* Lift card on hover */
-}
-
-/* Contact Section */
-#contact {
-    background-color: #F7F7F7; /* Soft White */
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #5D88C8; /* Accent Blue */
-}
-
-#contact p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    color: #4A4A4A; /* Warm Gray */
-}
-
-.contact-btn {
-    background-color: #5D88C8; /* Accent Blue */
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.contact-btn:hover {
-    background-color: #3A5A99; /* Deep Blue */
-}
-
-/* Footer */
-footer {
-    background-color: #8F8373; /* Dark Beige */
-    color: #F7F7F7; /* Soft White */
-    text-align: center;
-    padding: 20px;
-}
