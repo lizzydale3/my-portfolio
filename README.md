@@ -17,39 +17,75 @@ This is my personal portfolio website, built as a full-stack application with a 
 - **Professional Bio**: Education and expertise areas highlighted on the About page
 - **Contact Section**: Direct email and LinkedIn integration
 
-## Technologies & Architecture
+## System Architecture
 
-### Frontend
-- **Framework**: React 18 + TypeScript
-- **Routing**: Wouter
-- **UI**: shadcn/ui, Radix UI, Lucide React, Class Variance Authority
-- **Styling**: Tailwind CSS, custom design system
-- **State Management**: TanStack React Query
-- **Build Tool**: Vite
+### Frontend Architecture
+- **Framework**: React 18 with TypeScript for type safety and modern development practices
+- **Routing**: Wouter for lightweight client-side routing
+- **UI Framework**: Shadcn/ui components with Radix UI primitives for accessible, customizable components
+- **Styling**: Tailwind CSS with custom design system including light/dark theme support
+- **State Management**: TanStack React Query for server state management and caching
+- **Build Tool**: Vite for fast development and optimized production builds
 
-### Backend
-- **Runtime**: Node.js + Express.js
-- **Language**: TypeScript
-- **API**: RESTful, `/api` route prefix
-- **Database**: PostgreSQL (Neon serverless) via Drizzle ORM, Connect-pg-simple for sessions
+### Backend Architecture
+- **Runtime**: Node.js with Express.js framework
+- **Language**: TypeScript throughout the entire stack
+- **API Design**: RESTful API structure with `/api` prefix for all backend routes
+- **Development**: Hot module replacement and development middleware integration
+- **Error Handling**: Centralized error handling middleware with proper HTTP status codes
 
-### Development
-- **Monorepo Structure**: Organized client and server directories, shared schema
-- **Hot Reload**: Fast development experience with error overlays
-- **Build**: Optimized production with code splitting
+### Data Storage Solutions
+- **ORM**: Drizzle ORM for type-safe database operations
+- **Database**: PostgreSQL (via Neon serverless) configured for production deployment
+- **Schema Management**: Drizzle migrations with schema defined in TypeScript
+- **Development Storage**: In-memory storage implementation for development/testing
+- **Session Management**: Connect-pg-simple for PostgreSQL-backed session storage
 
-## External Libraries
+### Styling and Design System
+- **Design Approach**: Professional, minimalist design inspired by modern developer portfolios
+- **Color System**: Carefully crafted color palette with semantic color variables for consistent theming
+- **Typography**: Inter font family for clean, professional appearance with defined hierarchy
+- **Component Library**: Custom component variants using class-variance-authority for consistent styling
+- **Responsive Design**: Mobile-first approach with breakpoint-based responsive design
+- **Animation**: Subtle hover effects and smooth transitions using CSS transitions
 
-- **Embla Carousel**: Project showcase carousel
-- **React Hook Form**: Forms
-- **Date-fns**: Date utilities
-- **Clsx, Tailwind Merge**: Utility class merging
-- **Zod**: Schema validation
+### Development and Build Process
+- **Monorepo Structure**: Client and server code in organized directories with shared schema
+- **Path Mapping**: TypeScript path aliases for clean imports (`@/`, `@shared/`)
+- **Asset Management**: Static assets handling with proper bundling and optimization
+- **Development Experience**: Hot reload, error overlays, and development-specific tooling
+- **Build Process**: Optimized production builds with code splitting and asset optimization
 
-## Accessibility & Standards
+## External Dependencies
 
-- Full dark/light mode support
-- Professional color contrast and typography
-- Fast loading, mobile-responsive, accessible layouts
+### UI and Component Libraries
+- **Radix UI**: Comprehensive set of accessible, unstyled UI primitives for building the component system
+- **Lucide React**: Modern icon library providing consistent iconography throughout the application
+- **Class Variance Authority**: Type-safe variant API for styling components consistently
+- **Embla Carousel**: Lightweight carousel library for project showcases
+
+### Development and Build Tools
+- **Vite**: Modern build tool with fast HMR and optimized production builds
+- **TypeScript**: Static type checking across the entire application stack
+- **ESBuild**: Fast JavaScript bundler for server-side code compilation
+- **PostCSS**: CSS processing with Autoprefixer for cross-browser compatibility
+
+### Database and ORM
+- **Drizzle ORM**: Type-safe ORM for PostgreSQL with migration support
+- **Neon Database**: Serverless PostgreSQL database service for production deployment
+- **Drizzle Kit**: Migration and schema management tools for database operations
+
+### State Management and Data Fetching
+- **TanStack React Query**: Powerful server state management with caching, synchronization, and background updates
+- **React Hook Form**: Performance-focused forms with minimal re-renders and excellent TypeScript support
+
+### Utility Libraries
+- **Date-fns**: Modern date utility library for handling date operations
+- **Clsx & Tailwind Merge**: Utility libraries for conditional and merged class names
+- **Zod**: TypeScript-first schema validation for runtime type checking
+
+### Deployment and Production
+- **Express.js**: Web application framework for Node.js handling API routes and serving static files
+- **Connect-pg-simple**: PostgreSQL session store for Express sessions in production environment
 
 ---

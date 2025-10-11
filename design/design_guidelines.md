@@ -80,10 +80,6 @@
 - Email and LinkedIn as primary contact methods
 - Professional and accessible layout
 
-## Images
-- This portfolio focuses on content and technical expertise rather than visual imagery. Any images should be:
-- Project screenshots (optional): Small thumbnails in project cards
-- Professional headshot (optional): Small avatar in about section
 
 ## Accessibility & Professional Standards
 - Full dark/light mode support with consistent theming
